@@ -1,0 +1,10 @@
+{
+    "name": "telegram-bot-webhook",
+    "description": "Telegram Bot Webhook Handler",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "files": ["index.php"]
+    }
+}

@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect all requests to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Set proper headers
+Header always set Content-Type "application/json"
